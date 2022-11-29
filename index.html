@@ -5,23 +5,28 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Étterem - Főoldal</title>
-      <link rel="stylesheet" href="indexstyle.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+
       <header>
          <img id="logo" src="forras/logo.png">
-         <a href="">Étlap</a>
-         <a href="">Kapcsolat</a>
+         <p id="fooldal">Főoldal</p>
+         <a href="kapcsolat.html">Kapcsolat</a>
+         <a href="etlap.html">Étlap</a>
+         <a href="index.html">Főoldal</a>
       </header>
-   <body>
+
       <div id="fejresz">
-         <img src="forras/index/etel.png" style="width: 100%; height: 100%; pointer-events: none;">
-         <img id="logofejresz" src="forras/index/logo.png" style="box-shadow: 50px 50px 50px black">
          <p>Ismerje meg<br> kinálatunkat</p>
+         <img id="logofejresz" src="forras/index/logo.png">
       </div>
+
       <div id="szakacsok">
          <p>Szakácsaink</p>
          <table>
             <tr>
-               <td rowspan="2" id="kep"><img src="forras/index/benji.png" style="border-radius: 30px; width: 300px;"></td>
+               <td rowspan="2"><img class="szakacskep" src="forras/index/benji.png"></td>
                <td class="nev">Benji</td>
             </tr>
             <tr>
@@ -33,7 +38,7 @@
          </table>
          <table>
             <tr>
-               <td rowspan="2" id="kep"><img src="forras/index/Füles.png" style="border-radius: 30px; width: 300px;"></td>
+               <td rowspan="2"><img class="szakacskep" src="forras/index/fules.png"></td>
                <td class="nev">Füles</td>
             </tr>
             <tr>
@@ -45,7 +50,7 @@
          </table>
          <table>
             <tr>
-               <td rowspan="2" id="kep"><img src="forras/index/morzsi.png" style="border-radius: 30px; width: 300px;"></td>
+               <td rowspan="2"><img class="szakacskep" src="forras/index/morzsi.png"></td>
                <td class="nev">Morzsi</td>
             </tr>
             <tr>
@@ -55,44 +60,43 @@
                   sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
             </tr>
          </table>
-         <p style="padding-top: 0px; margin-top: -10px; font-size:55px">És még sokan mások</p>
       </div>
       <div id="gradient"></div>
       <div id="ertekelesek">
          <p id="cim">Értékeléseink</p>
          <table style="margin-top: 20px">
             <tr>
-               <td id="ertekelo">Görk Orsolya</td>
+               <td class="ertekelo">Görk Orsolya</td>
                <td style="width: 100px"></td>
-               <td id="ertekelo">Folyékony Szilárd</td>
+               <td class="ertekelo">Folyékony Szilárd</td>
             </tr>
             <tr>
-               <td id="ertekeles">„Finom volt az étel, és Benji kifejezetten kedves. Máskor is biztosan ellátogatunk."</td>
+               <td class="ertekeles">„Finom volt az étel, és Benji kifejezetten kedves. Máskor is biztosan ellátogatunk."</td>
                <td style="width: 100px"></td>
-               <td id="ertekeles">„Gyors kiszolgálás és nagy választék."</td>
+               <td class="ertekeles">„Gyors kiszolgálás és nagy választék."</td>
             </tr>
             <tr>
-               <td id="kep"><img src="forras/index/csillag5.png" alt=""></td>
+               <td class="kep"><img src="forras/index/csillag5.png" alt=""></td>
                <td style="width: 100px"></td>
-               <td id="kep"><img src="forras/index/csillag5.png" alt=""></td>
+               <td class="kep"><img src="forras/index/csillag5.png" alt=""></td>
             </tr>
             <tr>
                <td style="height: 20px;"></td>
             </tr>
             <tr>
-               <td id="ertekelo">Har Mónika</td>
+               <td class="ertekelo">Har Mónika</td>
                <td style="width: 100px"></td>
-               <td id="ertekelo">Kaktuszné Cserepes Virág</td>
+               <td class="ertekelo">Kaktuszné Cserepes Virág</td>
             </tr>
             <tr>
-               <td id="ertekeles">„Kutyaszőr volt az ételben. Ez elfogadhatatlan."</td>
+               <td class="ertekeles">„Kutyaszőr volt az ételben!!"</td>
                <td style="width: 100px"></td>
-               <td id="ertekeles">„Izletesek az ételek és nem is olyan drága mint a szomszédban lévő hotdogos."</td>
+               <td class="ertekeles">„Izletesek az ételek és nem is olyan drága mint a szomszédban lévő hotdogos."</td>
             </tr>
             <tr>
-               <td id="kep"><img src="forras/index/csillag1.png" alt=""></td>
+               <td class="kep"><img src="forras/index/csillag1.png" alt=""></td>
                <td style="width: 100px"></td>
-               <td id="kep"><img src="forras/index/csillag5.png" alt=""></td>
+               <td class="kep"><img src="forras/index/csillag5.png" alt=""></td>
             </tr>
          </table>
       </div>
@@ -100,9 +104,9 @@
    <footer>
       <table>
          <tr>
-            <th class="cimek">Fontos linkek</td>
+            <th class="cimek" style="width: 280px">Fontos linkek</td>
             <th class="cimek">Jogi oldal</td>
-            <th class="cimek" style="width: 0px">Kapcsolat</td>
+            <th class="cimek" style="width: 185px">Kapcsolat</td>
          </tr>
          <tr>
             <td>Éttermeink</td>
@@ -112,7 +116,7 @@
          <tr>
             <td>Megközelíthetőség</td>
             <td>Cookiek</td>
-            <td>Szeged, Pista utca 6.</td>
+            <td>Szeged, Gutenberg u. 11</td>
          </tr>
          <tr>
             <td>Étlap</td>
@@ -125,5 +129,5 @@
          </tr>
       </table>
       <a href="#"><p>Vissza az oldal tetejére</p></a>
-   </footer>
+</footer>
 </html>

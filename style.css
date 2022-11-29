@@ -1,0 +1,396 @@
+@font-face {
+    font-family: Nunito-bold;
+    src: url(font/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-Medium;
+    src: url(font/Nunito-Medium.ttf);
+}
+
+/* fooldal */
+
+body{
+    margin: 0px;
+    background-color: black ;
+}
+
+header #fooldal{
+    font-size: 30px;
+    float: left;
+    font-family: Nunito-Bold;
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 2px 30px 0px black;
+    top: 0px;
+    z-index: 1;
+}
+
+footer{
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+.cimek{
+    font-family: Nunito-Bold;
+    width: 250px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 30px;
+}
+
+footer td{
+    font-family: Nunito-Medium;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 80px;
+    font-family: Nunito-Bold;
+    font-size: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#fejresz{
+    height: 1080px;
+    width: 100%;
+    background-color: white;
+    background-image: url("forras/index/etel-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fejresz p{
+    color: white;
+    font-size: 130px;
+    margin: 0;
+    text-align: center;
+    font-family: Nunito-Bold;
+    text-shadow: 1px 1px 25px black;
+    padding-top: 200px;
+    line-height: 0.8em;
+}
+
+#logofejresz{
+    display: block;
+    margin: 0 auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+.szakacskep{
+    border-radius: 30px;
+    width: 300px;
+    pointer-events: none;
+    user-select: none;
+}
+
+header a{
+    float: right;
+    padding-top: 40px;
+    margin-right: 70px;
+    font-family: Nunito-Bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+header a:hover{
+    float: right;
+    padding-top: 40px;
+    margin-right: 70px;
+    font-family: Nunito-Bold;
+    font-size: 20px;
+    border-bottom-color: grey;
+    color: grey;
+    z-index: 10;
+}
+
+#logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+    content: icon;
+    padding-top: px;
+    padding-left: 50px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#szakacsok p{
+    text-align: center;
+    font-size: 75px;
+    font-family: Nunito-Bold;
+    color: white;
+    margin-top: -120px ;
+}
+
+table,td,th{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.nev{
+    width: 50vw;
+    height: 5px;
+    padding-left: 40px;
+    font-size: 80px;
+    font-family: Nunito-Bold;
+    color:white;
+}
+
+.leiras{
+    font-size: 20px;
+    font-family: Nunito-Medium;
+    padding-left: 40px; 
+    color:white;
+}
+
+#gradient{
+    height: 100px;
+    background: linear-gradient(180deg, black 0%, white 100%);
+}
+
+#ertekelesek{
+    height: 850px;
+    background-color: white;
+}
+
+#ertekelesek #cim{
+    margin: 0px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 80px;
+    font-family: Nunito-Bold;
+}
+
+#ertekelesek .ertekelo{
+    font-family: Nunito-Bold;
+    text-align: center;
+    font-size: 50px;
+    width: 400px;
+    line-height: 0.8em;
+}
+
+#ertekelesek .ertekeles{
+    font-size: 30px;
+    font-family: Nunito-Medium;
+    text-align: center;
+}
+
+#ertekelesek .kep{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* etlap */
+
+header #etlap{
+    font-size: 30px;
+    float: left;
+    font-family: Nunito-Bold;
+}
+
+#fejresz-etlap-kapcsolat p{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-family: Nunito-Bold;
+    margin-top: -230px;
+}
+
+#kereso{
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    border: 2px white solid;
+    background-color: black;
+    color: white;
+    font-family: Nunito-Medium;
+    border-radius: 30px;
+    height: 40px;
+    width: 20vw;
+    position: relative;
+} 
+
+#kereso:hover{
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    border: 2px white solid;
+    background-color: black;
+    color: white;
+    font-family: Nunito-Medium;
+    border-radius: 30px;
+    height: 40px;
+    width: 20vw;
+    position: relative;
+    animation: kereso 0.4s forwards;
+}
+
+@keyframes kereso {
+    from {box-shadow: 0px;}
+    to { box-shadow: 0px 0px 400px 0px white;}
+}
+
+@keyframes megvesz{
+    from {background-color: white;}
+    to {background-color: wheat;}
+}
+
+#kategoria{
+    margin-top: 70px;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    font-family: Nunito-Bold;
+} 
+
+.etel{
+    margin-top: 60px;
+}
+
+.etelkep{
+    width: 150px;
+    border-radius: 90px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.etelnev{
+    color: white;
+    font-family: Nunito-Bold;
+    font-size: 40px;
+    padding-left: 25px;
+    line-height: 0.8em;
+    width: 600px;
+}
+
+.eteldesc{
+    color: white;
+    font-family: Nunito-Medium;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.ar{
+    width: 200px;
+    font-size: 35px;
+    font-family: Nunito-bold;
+    text-align: center;
+    color: white;
+}
+
+.megveszem,.ar{
+    padding-left: 35px;
+}
+
+.megveszem button{
+    font-family: Nunito-Medium;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    width: 85%;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.megveszem button:hover{
+    animation: megvesz 0.5s forwards;
+}
+
+.megveszem button:after{
+    background-color: green;
+}
+
+/* kapcsolat */
+
+.icon{
+    width: 70px;
+}
+
+#icon{
+    width: 40px;
+}
+
+.kapcsolatdesc{
+    color: white;
+    font-family: Nunito-Medium;
+    font-size: 25px;
+}
+
+#kapcsolatcim{
+    color: white;
+    font-family: Nunito-Bold;
+    font-size: 35px;
+    height: 40px;
+}
+
+#kapcsolat{
+    margin-top: 50px;
+    color: white;
+}
+
+#kapcs_valaszto{
+    width: 120px;
+}
+
+#terkep{
+    border-radius: 40px;
+    box-shadow: 0px 0px 40px blanchedalmond;
+}
+
+#cim-margin-bottom{
+    height: 145px;
+}
+
+#cim-margin-top{
+    height: 145px;
+}
+
+#miert_mi{
+    height: 550px;
+    background-color: white;
+}
+
+#miertmi_tabla th{
+    font-family: Nunito-Bold;
+    font-size: 85px;
+}
+
+#miertmi_tabla img{
+    padding-top: 15px;
+    width: 50px;
+}
+
+#miertmi_tabla td{
+    padding-left: 15px;
+    font-size: 50px;
+    font-family: Nunito-medium;
+}
+
+#miertmi_tabla{
+    padding-top: 50px;
+}
